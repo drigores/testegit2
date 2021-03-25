@@ -1,0 +1,220 @@
+{
+  "audit": false,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "query445579",
+  "defaultValues": {
+    "codEscolaridadeRais": null,
+    "desEscolaridade": null,
+    "escolaridade": null,
+    "timRowversion": null
+  },
+  "defaultValuesProperties": {
+    "codEscolaridadeRais": null,
+    "desEscolaridade": null,
+    "escolaridade": null,
+    "timRowversion": null
+  },
+  "entityFullName": "stc.entity.Escolaridade",
+  "entitySimpleName": "Escolaridade",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": {
+      "blocklyClass": "blockly.CRUDEscolaridade",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "AntesDeInserir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Escolaridade\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeExcluir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Escolaridade\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeAlterar",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Escolaridade\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.CRUDEscolaridade",
+        "sourcePath": "src/main/java/blockly/CRUDEscolaridade.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "AntesDeExcluir",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;stc.entity.Escolaridade\u0026gt;",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ],
+      "type": "server"
+    },
+    "beforeInsert": {
+      "blocklyClass": "blockly.CRUDEscolaridade",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "AntesDeInserir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Escolaridade\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeExcluir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Escolaridade\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeAlterar",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Escolaridade\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.CRUDEscolaridade",
+        "sourcePath": "src/main/java/blockly/CRUDEscolaridade.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "AntesDeInserir",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;stc.entity.Escolaridade\u0026gt;",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ],
+      "type": "server"
+    },
+    "beforeUpdate": {
+      "blocklyClass": "blockly.CRUDEscolaridade",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "AntesDeInserir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Escolaridade\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeExcluir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Escolaridade\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeAlterar",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Escolaridade\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.CRUDEscolaridade",
+        "sourcePath": "src/main/java/blockly/CRUDEscolaridade.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "AntesDeAlterar",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;stc.entity.Escolaridade\u0026gt;",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ],
+      "type": "server"
+    },
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "e",
+        "entity": "Escolaridade",
+        "namespace": "stc.entity.Escolaridade"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [
+      {
+        "field": "e.desEscolaridade",
+        "func": "get",
+        "order": "asc"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "field": "e",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "CRUDEscolaridade",
+  "queryParamsValues": [],
+  "security": {
+    "codEscolaridadeRais": null,
+    "desEscolaridade": null,
+    "escolaridade": null,
+    "timRowversion": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/stc/query445579/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null
+  }
+}

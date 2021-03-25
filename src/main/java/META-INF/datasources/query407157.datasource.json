@@ -1,0 +1,167 @@
+{
+  "audit": false,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "query407157",
+  "defaultValues": {
+    "cargo": null,
+    "indPadrao": null,
+    "rubrica": null,
+    "timRowversion": null,
+    "vlrRubrica": null,
+    "vlrRubricaContrato": null
+  },
+  "defaultValuesProperties": {
+    "cargo": null,
+    "indPadrao": null,
+    "rubrica": null,
+    "timRowversion": null,
+    "vlrRubrica": null,
+    "vlrRubricaContrato": null
+  },
+  "entityFullName": "stc.entity.CargoRubrica",
+  "entitySimpleName": "CargoRubrica",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": {
+      "blocklyClass": "blockly.CRUDCargoRubrica",
+      "blocklyJson": {
+        "class": "blockly.CRUDCargoRubrica",
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "AntesDeIncluir",
+            "params": [
+              "Entidade\u003cstc.entity.CargoRubrica\u003e"
+            ]
+          }
+        ],
+        "namespace": "blockly.CRUDCargoRubrica",
+        "sourcePath": "src/main/java/blockly/CRUDCargoRubrica.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "AntesDeIncluir",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u003cstc.entity.CargoRubrica\u003e",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ]
+    },
+    "beforeUpdate": null,
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [
+        {
+          "field": "c.cargo",
+          "id": "c.cargo",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":cargo",
+          "valueIsField": false
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "c",
+        "entity": "CargoRubrica",
+        "name": "CargoRubrica",
+        "namespace": "stc.entity.CargoRubrica"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "c.cargo",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "c.rubrica",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "c.indPadrao",
+        "func": "get",
+        "type": "boolean"
+      },
+      {
+        "field": "c.rubrica.desRubrica",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "c.vlrRubrica",
+        "func": "get",
+        "type": "double"
+      },
+      {
+        "field": "c.vlrRubricaContrato",
+        "func": "get",
+        "type": "double"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "CRUDCargoRubrica",
+  "queryParamsValues": [
+    {
+      "fieldName": "cargo",
+      "fieldValue": ""
+    }
+  ],
+  "security": {
+    "cargo": null,
+    "indPadrao": null,
+    "rubrica": null,
+    "timRowversion": null,
+    "vlrRubrica": null,
+    "vlrRubricaContrato": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/stc/query407157/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null
+  }
+}

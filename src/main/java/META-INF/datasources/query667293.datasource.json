@@ -1,0 +1,220 @@
+{
+  "audit": false,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "query667293",
+  "defaultValues": {
+    "codRacaRais": null,
+    "nomRaca": null,
+    "raca": null,
+    "timRowversion": null
+  },
+  "defaultValuesProperties": {
+    "codRacaRais": null,
+    "nomRaca": null,
+    "raca": null,
+    "timRowversion": null
+  },
+  "entityFullName": "stc.entity.Raca",
+  "entitySimpleName": "Raca",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": {
+      "blocklyClass": "blockly.CRUDRaca",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "AntesDeInserir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Raca\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeExcluir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Raca\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeAlterar",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Raca\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.CRUDRaca",
+        "sourcePath": "src/main/java/blockly/CRUDRaca.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "AntesDeExcluir",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;stc.entity.Raca\u0026gt;",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ],
+      "type": "server"
+    },
+    "beforeInsert": {
+      "blocklyClass": "blockly.CRUDRaca",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "AntesDeInserir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Raca\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeExcluir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Raca\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeAlterar",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Raca\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.CRUDRaca",
+        "sourcePath": "src/main/java/blockly/CRUDRaca.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "AntesDeInserir",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;stc.entity.Raca\u0026gt;",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ],
+      "type": "server"
+    },
+    "beforeUpdate": {
+      "blocklyClass": "blockly.CRUDRaca",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "AntesDeInserir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Raca\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeExcluir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Raca\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeAlterar",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Raca\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.CRUDRaca",
+        "sourcePath": "src/main/java/blockly/CRUDRaca.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "AntesDeAlterar",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;stc.entity.Raca\u0026gt;",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ],
+      "type": "server"
+    },
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "r",
+        "entity": "Raca",
+        "namespace": "stc.entity.Raca"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [
+      {
+        "field": "r.nomRaca",
+        "func": "get",
+        "order": "asc"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "field": "r",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "CRUDRaca",
+  "queryParamsValues": [],
+  "security": {
+    "codRacaRais": null,
+    "nomRaca": null,
+    "raca": null,
+    "timRowversion": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/stc/query667293/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "audit": false,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "query219231",
+  "defaultValues": {
+    "desMontanteB": null,
+    "indDescontoFalta": null,
+    "montanteB": null,
+    "timRowversion": null
+  },
+  "defaultValuesProperties": {
+    "desMontanteB": null,
+    "indDescontoFalta": null,
+    "montanteB": null,
+    "timRowversion": null
+  },
+  "entityFullName": "stc.entity.MontanteB",
+  "entitySimpleName": "MontanteB",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": {
+      "blocklyClass": "blockly.CRUDMontanteB",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "AntesDeInserir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.MontanteB\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeExcluir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.MontanteB\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeAlterar",
+            "params": [
+              "Entidade\u0026lt;stc.entity.MontanteB\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.CRUDMontanteB",
+        "sourcePath": "src/main/java/blockly/CRUDMontanteB.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "AntesDeExcluir",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;stc.entity.MontanteB\u0026gt;",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ],
+      "type": "server"
+    },
+    "beforeInsert": {
+      "blocklyClass": "blockly.CRUDMontanteB",
+      "blocklyJson": {
+        "class": "blockly.CRUDMontanteB",
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "AntesDeInserir",
+            "params": [
+              "Entidade\u003cstc.entity.MontanteB\u003e"
+            ]
+          }
+        ],
+        "namespace": "blockly.CRUDMontanteB",
+        "sourcePath": "src/main/java/blockly/CRUDMontanteB.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "AntesDeInserir",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u003cstc.entity.MontanteB\u003e",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ]
+    },
+    "beforeUpdate": {
+      "blocklyClass": "blockly.CRUDMontanteB",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "AntesDeInserir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.MontanteB\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeExcluir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.MontanteB\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeAlterar",
+            "params": [
+              "Entidade\u0026lt;stc.entity.MontanteB\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.CRUDMontanteB",
+        "sourcePath": "src/main/java/blockly/CRUDMontanteB.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "AntesDeAlterar",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;stc.entity.MontanteB\u0026gt;",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ],
+      "type": "server"
+    },
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "m",
+        "entity": "MontanteB",
+        "namespace": "stc.entity.MontanteB"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [
+      {
+        "field": "m.desMontanteB",
+        "func": "get",
+        "order": "asc"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "field": "m",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "CRUDMontanteB",
+  "queryParamsValues": [],
+  "security": {
+    "desMontanteB": null,
+    "indDescontoFalta": null,
+    "montanteB": null,
+    "timRowversion": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/stc/query219231/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null
+  }
+}

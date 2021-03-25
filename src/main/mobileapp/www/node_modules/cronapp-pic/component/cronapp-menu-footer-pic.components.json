@@ -1,0 +1,45 @@
+{
+  "name": "crn-menu-footer-pic",
+  "text_pt_BR": "PIC - Menu Footer",
+  "text_en_US": "PIC - Menu Footer",
+  "class": "adjust-icon mdi mdi-pound",
+  "wrapper": false,
+  "templateURL": "src/main/webapp/node_modules/cronapp-pic/component/crnCronappMenuFooterPIC.template.html",
+  "childrenProperties": [
+  {
+    "name": "content",
+    "selector": ".crn-dir",
+    "displayName_pt_BR": "Label de produção",
+    "displayName_en_US": "Production Label",
+    "type": "content"
+  },
+  {
+    "name": "content",
+    "selector": ".crn-footer--sigla",
+    "displayName_pt_BR": "Sigla",
+    "displayName_en_US": "Initials",
+    "type": "content"
+  },
+  {
+    "name": "content",
+    "selector": ".crn-footer--divisor",
+    "displayName_pt_BR": "Divisor",
+    "displayName_en_US": "Splitter",
+    "type": "content"
+  },
+  {
+    "name": "content",
+    "selector": ".crn-footer--nomeSetor",
+    "displayName_pt_BR": "Nome de Fabricante",
+    "displayName_en_US": "Manufacturer name",
+    "type": "content"
+  },
+  {
+    "name": "content",
+    "selector": ".crn-versao",
+    "displayName_pt_BR": "Versão",
+    "displayName_en_US": "Version",
+    "type": "content"
+  }
+]
+}

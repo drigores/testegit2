@@ -1,0 +1,92 @@
+{
+  "audit": false,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "query978148",
+  "defaultValues": {
+    "desRubrica": null,
+    "indDescontoFalta": null,
+    "indDiario": null,
+    "indEncargoSocial": null,
+    "rubrica": null,
+    "timRowversion": null
+  },
+  "defaultValuesProperties": {
+    "desRubrica": null,
+    "indDescontoFalta": null,
+    "indDiario": null,
+    "indEncargoSocial": null,
+    "rubrica": null,
+    "timRowversion": null
+  },
+  "entityFullName": "stc.entity.Rubrica",
+  "entitySimpleName": "Rubrica",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isValid": true,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "r",
+        "entity": "Rubrica",
+        "namespace": "stc.entity.Rubrica"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "r",
+        "func": "get"
+      }
+    ]
+  },
+  "queryName": "SelectRubrica",
+  "queryParamsValues": [],
+  "security": {
+    "desRubrica": null,
+    "indDescontoFalta": null,
+    "indDiario": null,
+    "indEncargoSocial": null,
+    "rubrica": null,
+    "timRowversion": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/stc/query978148/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null
+  }
+}

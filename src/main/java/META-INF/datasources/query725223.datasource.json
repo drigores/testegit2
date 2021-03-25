@@ -1,0 +1,177 @@
+{
+  "audit": false,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "query725223",
+  "defaultValues": {
+    "anoInstrContratual": null,
+    "anoProcesso": null,
+    "codCPFCNPJForn": null,
+    "codTipoInstrContratual": null,
+    "datFimVigenciaOriginal": null,
+    "datInicioVigenciaOriginal": null,
+    "numInstrContratual": null,
+    "numMatrAssistenteFiscal": null,
+    "numMatrFiscal": null,
+    "numMatrSubstitutoFiscal": null,
+    "numProcesso": null,
+    "perEncargosSociais": null,
+    "perEncargosSociaisOriginal": null,
+    "taxAdministracao": null,
+    "taxAdministracaoOriginal": null,
+    "vlrMaximoFatura": null,
+    "vlrMaximoFaturaOriginal": null
+  },
+  "defaultValuesProperties": {
+    "anoInstrContratual": null,
+    "anoProcesso": null,
+    "codCPFCNPJForn": null,
+    "codTipoInstrContratual": null,
+    "datFimVigenciaOriginal": null,
+    "datInicioVigenciaOriginal": null,
+    "numInstrContratual": null,
+    "numMatrAssistenteFiscal": null,
+    "numMatrFiscal": null,
+    "numMatrSubstitutoFiscal": null,
+    "numProcesso": null,
+    "perEncargosSociais": null,
+    "perEncargosSociaisOriginal": null,
+    "taxAdministracao": null,
+    "taxAdministracaoOriginal": null,
+    "vlrMaximoFatura": null,
+    "vlrMaximoFaturaOriginal": null
+  },
+  "entityFullName": "stc.entity.STCInstrumentoContratual",
+  "entitySimpleName": "STCInstrumentoContratual",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [
+        {
+          "field": "s.codTipoInstrContratual",
+          "id": "s.codTipoInstrContratual",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":codTipoInstrContratual",
+          "valueIsField": false
+        },
+        {
+          "field": "s.anoInstrContratual",
+          "id": "s.anoInstrContratual",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":anoInstrContratual",
+          "valueIsField": false
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "s",
+        "entity": "STCInstrumentoContratual",
+        "namespace": "stc.entity.STCInstrumentoContratual"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [
+      {
+        "field": "s.numInstrContratual",
+        "func": "get",
+        "order": "asc"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "field": "s.anoInstrContratual",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "s.codTipoInstrContratual",
+        "func": "get",
+        "type": "string"
+      },
+      {
+        "field": "s.numInstrContratual",
+        "func": "get",
+        "type": "integer"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "COMBONumerosInstrumentosContratuaisUsuario",
+  "queryParamsValues": [
+    {
+      "fieldName": "codTipoInstrContratual",
+      "fieldValue": ""
+    },
+    {
+      "fieldName": "anoInstrContratual",
+      "fieldValue": ""
+    }
+  ],
+  "security": {
+    "anoInstrContratual": null,
+    "anoProcesso": null,
+    "codCPFCNPJForn": null,
+    "codTipoInstrContratual": null,
+    "datFimVigenciaOriginal": null,
+    "datInicioVigenciaOriginal": null,
+    "numInstrContratual": null,
+    "numMatrAssistenteFiscal": null,
+    "numMatrFiscal": null,
+    "numMatrSubstitutoFiscal": null,
+    "numProcesso": null,
+    "perEncargosSociais": null,
+    "perEncargosSociaisOriginal": null,
+    "taxAdministracao": null,
+    "taxAdministracaoOriginal": null,
+    "vlrMaximoFatura": null,
+    "vlrMaximoFaturaOriginal": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/stc/query725223/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null
+  }
+}

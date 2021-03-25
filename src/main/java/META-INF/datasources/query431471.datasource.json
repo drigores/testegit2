@@ -1,0 +1,237 @@
+{
+  "audit": false,
+  "baseEntity": null,
+  "blockly": null,
+  "calcFields": {},
+  "calcFieldsProperties": {},
+  "calcFieldsSecurity": {},
+  "customId": "query431471",
+  "defaultValues": {
+    "anoInstrumentoContratual": null,
+    "cargo": null,
+    "codTipoInstrumentoContratual": null,
+    "indLogin": null,
+    "indPercentuaisCargo": null,
+    "indSubstituto": "true",
+    "nomCargo": null,
+    "nomCargoFeminino": null,
+    "numHoras": null,
+    "numInstrumentoContratual": null,
+    "perEncargosSociais": null,
+    "perEncargosSociaisContrato": null,
+    "perTaxaAdministracao": null,
+    "perTaxaAdministracaoContrato": null,
+    "qtdPessoas": null,
+    "qtdPessoasContrato": null,
+    "sigCargo": null,
+    "timRowversion": null
+  },
+  "defaultValuesProperties": {
+    "anoInstrumentoContratual": null,
+    "cargo": null,
+    "codTipoInstrumentoContratual": null,
+    "indLogin": null,
+    "indPercentuaisCargo": null,
+    "indSubstituto": null,
+    "nomCargo": null,
+    "nomCargoFeminino": null,
+    "numHoras": null,
+    "numInstrumentoContratual": null,
+    "perEncargosSociais": null,
+    "perEncargosSociaisContrato": null,
+    "perTaxaAdministracao": null,
+    "perTaxaAdministracaoContrato": null,
+    "qtdPessoas": null,
+    "qtdPessoasContrato": null,
+    "sigCargo": null,
+    "timRowversion": null
+  },
+  "entityFullName": "stc.entity.Cargo",
+  "entitySimpleName": "Cargo",
+  "errorHandles": {
+    "foreignKey": null,
+    "primaryKey": null
+  },
+  "events": {
+    "afterDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "beforeDelete": null,
+    "beforeInsert": {
+      "blocklyClass": "blockly.CRUDCargo",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "AntesDeIncluir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Cargo\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.CRUDCargo",
+        "sourcePath": "src/main/java/blockly/CRUDCargo.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "AntesDeIncluir",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;stc.entity.Cargo\u0026gt;",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ],
+      "type": "server"
+    },
+    "beforeUpdate": {
+      "blocklyClass": "blockly.CRUDCargo",
+      "blocklyJson": {
+        "language": "java",
+        "methods": [
+          {
+            "hasReturn": "true",
+            "name": "AntesDeIncluir",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Cargo\u0026gt;"
+            ]
+          },
+          {
+            "hasReturn": "true",
+            "name": "AntesDeAlterar",
+            "params": [
+              "Entidade\u0026lt;stc.entity.Cargo\u0026gt;"
+            ]
+          }
+        ],
+        "namespace": "blockly.CRUDCargo",
+        "sourcePath": "src/main/java/blockly/CRUDCargo.blockly"
+      },
+      "blocklyLanguage": "java",
+      "blocklyMethod": "AntesDeAlterar",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;stc.entity.Cargo\u0026gt;",
+          "type": "CUSTOM",
+          "value": "data"
+        }
+      ],
+      "type": "server"
+    },
+    "onError": null,
+    "onNavigate": null
+  },
+  "query": {
+    "isEmpty": false,
+    "isRawSql": false,
+    "isValid": true,
+    "multiTenant": false,
+    "operationType": "object",
+    "pagination": false,
+    "paginatorAutomatic": false,
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "rules": [
+        {
+          "field": "c.codTipoInstrumentoContratual",
+          "id": "c.codTipoInstrumentoContratual",
+          "input": "text",
+          "operator": "equal",
+          "type": "string",
+          "value": ":codTipoInstrumentoContratual",
+          "valueIsField": false
+        },
+        {
+          "field": "c.anoInstrumentoContratual",
+          "id": "c.anoInstrumentoContratual",
+          "input": "text",
+          "operator": "equal",
+          "type": "integer",
+          "value": ":anoInstrumentoContratual",
+          "valueIsField": false
+        },
+        {
+          "field": "c.numInstrumentoContratual",
+          "id": "c.numInstrumentoContratual",
+          "input": "text",
+          "operator": "equal",
+          "type": "integer",
+          "value": ":numInstrumentoContratual",
+          "valueIsField": false
+        }
+      ],
+      "valid": true
+    },
+    "rulesEntity": [
+      {
+        "alias": "c",
+        "entity": "Cargo",
+        "name": "Cargo",
+        "namespace": "stc.entity.Cargo"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rulesSelect": [
+      {
+        "field": "c",
+        "func": "get",
+        "type": "string"
+      }
+    ],
+    "type": "select"
+  },
+  "queryName": "CRUDCargos",
+  "queryParamsValues": [
+    {
+      "fieldName": "codTipoInstrumentoContratual",
+      "fieldValue": ""
+    },
+    {
+      "fieldName": "anoInstrumentoContratual",
+      "fieldValue": ""
+    },
+    {
+      "fieldName": "numInstrumentoContratual",
+      "fieldValue": ""
+    }
+  ],
+  "security": {
+    "anoInstrumentoContratual": null,
+    "cargo": null,
+    "codTipoInstrumentoContratual": null,
+    "indLogin": null,
+    "indPercentuaisCargo": null,
+    "indSubstituto": null,
+    "nomCargo": null,
+    "nomCargoFeminino": null,
+    "numHoras": null,
+    "numInstrumentoContratual": null,
+    "perEncargosSociais": null,
+    "perEncargosSociaisContrato": null,
+    "perTaxaAdministracao": null,
+    "perTaxaAdministracaoContrato": null,
+    "qtdPessoas": null,
+    "qtdPessoasContrato": null,
+    "sigCargo": null,
+    "timRowversion": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/stc/query431471/",
+  "sourceType": "entityFullName",
+  "verbs": {
+    "COUNT": true,
+    "COUNTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null
+  }
+}
